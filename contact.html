@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- kid code of font awsom -->
+    <script src="https://kit.fontawesome.com/16dcf29601.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_vishnu </title>
+    <style>
+    body{
+        background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%));
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    
+    }
+            /* nav design start */
+        /* /* default color of link is blue so covert it into white */ */
+        .navbar-toggler-icon{
+        background-color: red;
+    }
+    #a{
+      font-size: 22px;
+      color:rgb(25, 138, 245);
+      border:2px whitesmoke solid;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    /* noe give the hover property for nav link */
+    #a:hover{
+      transform: scale(1.1);
+      background-color: yellow;
+      
+    }
+    /* now design the active link  */
+  .active{
+    background-color: yellow;
+
+  }
+    /* now style the active link */
+
+    h3{
+      font-size: 35px;
+      color: white;
+    }
+    #navbarNav{
+      margin-left: 35px;
+    }
+    /* give the border for nav and also give the fixed position for nav bar*/
+
+    .navbar{
+      border:rgb(83, 21, 184) 5px double;
+      position: sticky;
+      top:0px;
+    }
+        /* nav design end */
+    h1{
+        color: rgb(241, 27, 241);
+        text-align: center;
+        text-decoration: yellow underline;
+    }
+    form{
+        border:5px rgb(174, 18, 236) double;
+        text-align: center;
+    }
+    label{
+        color: violet;
+    }
+    input:visited,textarea:visited{
+        background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: white;
+    }
+input::placeholder,textarea::placeholder{
+    color: yellow;
+}
+    /* now give color to focus class */
+    input,textarea{
+      
+        background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: white;
+    }
+
+
+    /* now coloring the social media */
+    .ul li{
+        display: inline-block;
+    }
+    .ul{
+        text-align: center;
+    }
+  
+    /* now give the width for input tag only for laptop responsive */
+    @media(min-width:701px){
+ 
+        input,textarea{
+            width:70%;
+        }
+        .form{
+        border: 2px white inset;
+        float:left;
+        width: 49%;
+    }
+    .social{
+        border: 2px white inset;
+        display: inline-block;
+        width: 49%;
+    }
+    .padding{
+      padding:0 5px;
+
+    }
+
+    }
+ 
+
+
+    </style>
+</head>
+<body>
+        <!-- nav bar start -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <h3>vishnu-click --></h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " id="a"  href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="a" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="a" href="#">Goal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="a" href="#" >memories</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav><br><br>
+        <!-- nav end -->
+  <div class="padding" id="pad" >
+<div class="form">
+    <h1>CONTACT_FORM</h1>
+    <form action="https://formsubmit.co/bala44858@gmail.com" method="POST">
+        <label for="name">Enter Name:</label><br>
+        <input required id="name" type="text" placeholder="enter your name" name="name" ><br>
+        <label for="mail">Enter e-mail:</label><br>
+        <input required id="mail" type="email" placeholder="ener your e-mail id"><br>
+        <label for="num">Enter number:</label><br>
+        <input type="tel" id="num"  maxlength="10" minlength="10" placeholder="optional"><br>
+        <label for="sub">Sub:</label><br>
+        <input type="text" id="sub" placeholder="subject"><br>
+        <label for="cont">Main Content:</label><br>
+        <textarea name="content" id="cont" spellcheck="true"  placeholder="give your content" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="submit">Give Submit after you done:</label><br>
+        <input type="submit" id="submit" value="Submit" onclick="alert('Click Ok then e-mail sent to Mr Sarugasan, He soonly Contact you')">
+      </form>
+    </div>
+  </div>
+    <div class="padding">
+    <div class="social"><br>
+        <h1 class="s-head">Contact in Social Media </h1><br>
+        <ul class="ul">
+          <li><a target="_blank" href="https://www.facebook.com/saruhasan.pvs"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="https://youtube.com/channel/UCXmaeI4KaQ9p18YiCaV25jQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          <li><a target="_blank" href="https://instagram.com/sarugasan5?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+     </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
