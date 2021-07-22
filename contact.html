@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- kid code of font awsom -->
+  <!-- meta tag for refress the contend but if you implement the in hosting means this tag consume more net charge so only use for testing -->
+  <!-- <meta http-equiv="refresh" content="1">   -->
+  <!-- kid code of font awsom -->
+
     <script src="https://kit.fontawesome.com/16dcf29601.js" crossorigin="anonymous"></script>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -46,12 +49,19 @@
       font-size: 35px;
       color: white;
     }
+   /* now give the background color for navbar icon  */
+  .navbar-toggler{
+    background-color:rgb(218, 13, 167);
+  }
     #navbarNav{
       margin-left: 35px;
     }
     /* give the border for nav and also give the fixed position for nav bar*/
 
     .navbar{
+      background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%));
+      background-attachment: fixed;
+      background-size: 100% 100%;
       border:rgb(83, 21, 184) 5px double;
       position: sticky;
       top:0px;
@@ -79,8 +89,7 @@ input::placeholder,textarea::placeholder{
     color: yellow;
 }
     /* now give color to focus class */
-    input,textarea{
-      
+    input,textarea{ 
         background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -112,15 +121,17 @@ input::placeholder,textarea::placeholder{
         display: inline-block;
         width: 49%;
     }
-    .padding{
-      padding:0 5px;
-
     }
-
+ /* now styling the social media icon  */
+    .fa{
+      font-size: 33px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
- 
-
-
+  .fa:hover{
+    color:white ;
+    
+  }
     </style>
 </head>
 <body>
@@ -143,7 +154,7 @@ input::placeholder,textarea::placeholder{
                     <a class="nav-link" id="a" href="#">Goal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="a" href="#" >memories</a>
+                    <a class="nav-link" id="a" href="memory.html" >memories</a>
                   </li>
                 </ul>
               </div>
@@ -153,7 +164,7 @@ input::placeholder,textarea::placeholder{
   <div class="padding" id="pad" >
 <div class="form">
     <h1>CONTACT_FORM</h1>
-    <form action="https://formsubmit.co/bala44858@gmail.com" method="POST">
+    <form action="https://formsubmit.co/vishnunivas2018@mail.com" method="POST">
         <label for="name">Enter Name:</label><br>
         <input required id="name" type="text" placeholder="enter your name" name="name" ><br>
         <label for="mail">Enter e-mail:</label><br>
@@ -166,7 +177,7 @@ input::placeholder,textarea::placeholder{
         <textarea name="content" id="cont" spellcheck="true"  placeholder="give your content" id="" cols="30" rows="10"></textarea>
         <br>
         <label for="submit">Give Submit after you done:</label><br>
-        <input type="submit" id="submit" value="Submit" onclick="alert('Click Ok then e-mail sent to Mr Sarugasan, He soonly Contact you')">
+        <input type="submit" id="submit" value="Submit" onclick="alert('Click Ok then e-mail sent to Mr Vishnu ,He soonly Contact you');">
       </form>
     </div>
   </div>
@@ -174,9 +185,9 @@ input::placeholder,textarea::placeholder{
     <div class="social"><br>
         <h1 class="s-head">Contact in Social Media </h1><br>
         <ul class="ul">
-          <li><a target="_blank" href="#"><i class="fa fa-facebook-f"></i></a></li>
-          <li><a target="_blank" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-          <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a id="icon" target="_blank" href="https://www.facebook.com/profile.php?id=100015129097684"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a id="icon" target="_blank" href="https://twitter.com/@Vishnu_DAE"><i class="fa fa-twitter"></i></a></li>
+          <li><a id="icon" target="_blank" href="https://www.instagram.com/it_me_vishnu.r?r=nametag"><i class="fa fa-instagram"></i></a></li>
         </ul>
      </div>
     </div>
