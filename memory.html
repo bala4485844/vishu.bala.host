@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- css file from bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+     <!-- link for google fonts -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vishnu-memory</title>
+    <style>
+           /* background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212)); */
+      body{
+            color: white;
+            background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        /* nav design start */
+        /* /* default color of link is blue so covert it into white */ */
+        .navbar-toggler-icon{
+        background-color: red;
+    }
+    /* now give the background color for navbar icon  */
+  .navbar-toggler{
+    background-color:rgb(218, 13, 167);
+  }
+    #a{
+      font-size: 22px;
+      color:rgb(25, 138, 245);
+      border:2px whitesmoke solid;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    /* noe give the hover property for nav link */
+    #a:hover{
+      transform: scale(1.1);
+      background-color: yellow;
+      
+    }
+    /* now design the active link  */
+  .active{
+    background-color: yellow;
+  }
+    /* now style the active link */
+
+    h3{
+      font-size: 35px;
+      color: white;
+    }
+    #navbarNav{
+      margin-left: 35px;
+    }
+    /* give the border for nav */
+    .navbar{
+      border:rgb(83, 21, 184) 5px double;
+    }
+        /* nav design end */
+        /* now design the gallery  */
+    img{
+        width: 100%;
+        height: 300px;
+    }
+    .gallery{
+        width: 24.9%;
+        float: left;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    /* this is responsible for 3 coloumn layout so max 850px */
+    @media(max-width:850px){
+        .gallery{
+            width: 33.33%;
+        }
+    }
+    /* this is responsible for 2 layer coloumn so max 700px */
+
+    @media(max-width:700px){
+        .gallery{
+            width: 49.9%;
+        }
+    }
+    /* this is responsible for mobile */
+    @media(max-width:500px){
+        .gallery{
+            width: 99.9%;
+
+        }
+
+
+    }
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <h3>vishnu-click --></h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " id="a"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="a" href="#">Goal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="a" href="memory.html" >memories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+<!-- nav end --> 
+<h1>This picture Describes the Momentum of vishnu.</h1>
+<div class="gallery">
+    <img src="gallery-pic/img1.jpeg" alt="img1">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img2.jpeg" alt="img2">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img3.jpeg" alt="img3">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img4.jpeg" alt="img4">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img5.jpeg" alt="img5">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img6.jpeg" alt="img6">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img7.jpeg" alt="img7">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img8.jpeg" alt="img8">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img9.jpeg" alt="img9">
+</div>
+<div class="gallery">
+    <img src="gallery-pic/img10.jpeg" alt="img10">
+</div>
+
+
+<!-- javascript file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
